@@ -35,4 +35,3 @@ steps:
     containerRegistry: 'SebugDockerHub'
     repository: 'sebug/apple-id-boot'
     command: 'push'
-    tags: 'latest'
