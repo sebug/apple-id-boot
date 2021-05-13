@@ -17,5 +17,6 @@ I started off with a JDK version 11 standard Maven build, but the goal is to hav
 it in a container afterwards. I also ensure continuous integration is enabled
 in the project.
 
-
+The docker image can get built directly using mvn spring-boot:build-image ,
+and I also added the task to the azure-pipelines.yaml
 
