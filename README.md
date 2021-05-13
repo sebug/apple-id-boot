@@ -49,3 +49,9 @@ sign in.
 The big mystery was the redirect URI, so I chose https://appleidbootwa.azurewebsites.net/login/oauth2/code/apple to test. The domain is appleidbootwa.azurewebsites.net
 
 I then went through the steps to create a key .p8 file. Now I have to know how to use it.
+
+## Generate a client_secret
+This one looks complicated. I have created a repository for the secret generation.
+
+https://github.com/sebug/apple-secret-generator
+
