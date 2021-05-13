@@ -8,5 +8,7 @@ environment variables APPLE_CLIENT_ID and APPLE_CLIENT_SECRET .
 
 To find those out, I'll use the steps on https://auth0.com/docs/connections/apple-siwa/set-up-apple 
 
-Ok, that needs a real https URL, let me set that up first.
+Ok, that needs to be deployed somewhere. Let the Yak shaving begin. First step: Build the
+app with Azure Devops https://medium.com/@TimvanBaarsen/build-your-spring-boot-project-using-azure-pipelines-in-azure-devops-3305977991d
 
+I created a new project on dev.azure.com, pointing to the github code.
