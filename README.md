@@ -40,3 +40,12 @@ Now that that works, let's host it in Azure!
 ## Azure App Service
 Initially I wanted to write this as a Bicep template, but I couldn't
 get all the way there, so I configured it manually.
+
+The main thing I had to do was set the WEBSITES_PORT to 8080 so that it knows where
+the website is hosted. It is then accessible on https://appleidbootwa.azurewebsites.net/
+which currently points us to the username/password login page. Now we can set up apple
+sign in.
+
+The big mystery was the redirect URI, so I chose https://appleidbootwa.azurewebsites.net/login/oauth2/code/apple to test. The domain is appleidbootwa.azurewebsites.net
+
+I then went through the steps to create a key .p8 file. Now I have to know how to use it.
