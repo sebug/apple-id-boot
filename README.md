@@ -20,3 +20,11 @@ in the project.
 The docker image can get built directly using mvn spring-boot:build-image ,
 and I also added the task to the azure-pipelines.yaml
 
+I won't be using Azure container registry like in the tutorial but instead I'll push
+it directly to DockerHub. If I recall correctly I already did that in a project, so
+I'll inspire myself there ( https://github.com/sebug/message-log/blob/master/azure-pipelines.yml ).
+
+First I'll add a service connection to DockerHub. I'll also prepare the repository on
+DockerHub.
+
+
