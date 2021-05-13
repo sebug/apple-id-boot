@@ -29,3 +29,10 @@ DockerHub.
 
 I also adapted the pom to point to the repository I created. Now we can add the push
 image task.
+
+With the image pushed, I can close the circle and run the devops built image locally:
+
+    docker pull sebug/apple-id-boot:628
+    docker run -p 8080:8080 -d sebug/apple-id-boot:628
+
+Now that that works, let's host it in Azure!
