@@ -27,4 +27,5 @@ I'll inspire myself there ( https://github.com/sebug/message-log/blob/master/azu
 First I'll add a service connection to DockerHub. I'll also prepare the repository on
 DockerHub.
 
-
+I also adapted the pom to point to the repository I created. Now we can add the push
+image task.
