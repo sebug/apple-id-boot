@@ -33,6 +33,6 @@ steps:
   displayName: Push Docker image
   inputs:
     containerRegistry: 'SebugDockerHub'
-    repository: 'apple-id-boot'
+    repository: 'sebug/apple-id-boot'
     command: 'push'
     tags: 'latest'
