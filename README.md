@@ -36,3 +36,13 @@ With the image pushed, I can close the circle and run the devops built image loc
     docker run -p 8080:8080 -d sebug/apple-id-boot:628
 
 Now that that works, let's host it in Azure!
+
+## Bicep Template for App Service
+I wanna host this whole thing in Azure App Service, and I'm using the bicep
+language to set it up, basing myself on the example here: https://github.com/Azure/bicep/blob/main/docs/examples/101/app-service-regional-vnet-integration/main.bicep
+
+Without the vnet stuff.
+
+    az group create --name appleIDBootResourceGroup --location switzerlandnorth
+    bicepFile=main.bicep
+    az deployment group create --name aibicep --resource-group appleIDBootResourceGroup --template-file $bicepFile
